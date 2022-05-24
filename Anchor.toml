@@ -1,0 +1,15 @@
+[features]
+seeds = false
+
+[programs.localnet]
+nirvana = "HAhqnVzKEMEhAmLJh7LcUtyzXWFNTP7s5CyppnBhRpUm"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "mainnet"
+wallet = "/home/user/Solana/game/GAMEZSNM56PeAkw4VKppMLS1rnNfaSyTT1joomT3XkCv.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
