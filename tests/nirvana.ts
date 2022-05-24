@@ -38,10 +38,12 @@ describe('nirvana', () => {
 
     const state = await program.account.priceFieldV2.fetch(price_field)
 
-    for (const i in state) {
-      if (i != 'nirvCenter' && i != 'bump') {
-        console.log(i, new BN(state[i]).toString())
-      }
-    }
+    console.log('rampWidth: ', state.rampWidth.val.toString())
+    console.log('rampHeight: ', state.rampHeight.val.toString())
+    console.log('rampStart: ', state.rampStart.val.toString())
+    console.log('mainSlope: ', state.mainSlope.val.toString())
+    console.log('floorPrice: ', state.floorPrice.val.toString())
+    console.log('nirvCenter: ', state.nirvCenter.toString())
+    console.log('bump: ', state.bump)
   })
 })
